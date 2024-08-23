@@ -1,0 +1,141 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* GENERAL STYLE */
+
+html {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+}
+
+body {
+    width: 50%;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    line-height: 1.6;
+}
+
+p,
+.outfit-font {
+    font-family: "Outfit", sans-serif;
+}
+
+h1, 
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+} 
+
+.pre-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;    
+}
+ul li,
+ol li {
+    padding: 5px;
+    list-style-position: outside;
+}
+.pre-time ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+.pre-time h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: hsl(332, 51%, 32%);
+}
+
+.bold {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+
+.line,
+.ingredeints,
+.instructions,
+.nutrition {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.ingredeints h2,
+.instructions h2,
+.nutrition h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredeints ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+
+
+.instructions li::marker {
+    color: hsl(14, 45%, 36%);
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table td {
+    padding: 5px 15px; 
+}
+table tr:not(:last-child){
+    border-bottom: 1px hsl(30, 10%, 34%) solid;
+    
+}
+
+table td:nth-child(2) {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+/* || Mobile desgin || */
+
+@media screen and (max-width: 769px) {
+    html {
+        margin: 0;
+        
+    }
+    body {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        background-color: hsl(0, 0%, 100%);
+        line-height: 1.6;
+        
+    }
+
+    main, footer {
+        padding: 0 30px;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+}
